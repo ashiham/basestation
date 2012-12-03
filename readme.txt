@@ -1,7 +1,7 @@
 Base Station WordPress Theme
 --------------------------
 
-Base Station is a responsive starter theme for WordPress. It uses the Zurb Foundation 3.x front-end framework. It comes with core HTML, CSS, and Javascript for type, form, grids, navigation, buttons, dropdown menus, and more. Visit http://www.johnparris.com/wordpress-themes/basestation/ to see the theme in action, to download it, or to read the documentation.
+Base Station is a responsive starter theme for WordPress. It uses the Zurb Foundation 3.x front-end framework. It comes with core HTML, CSS, and Javascript for type, form, grids, navigation, buttons, dropdown menus, the Orbit slider and more. Visit http://www.johnparris.com/basestation/ to see the theme in action, to download it, or to read the documentation.
 
 If you would like to contribute, please fork it and submit your pull requests. Thanks!
 
