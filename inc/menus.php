@@ -38,10 +38,8 @@ class Basestation_Topbar_Nav_Walker extends Walker_Nav_Menu {
 
     if ( $element->is_dropdown ) {
 
-      if( 0 == $depth  )
         $element->classes[] = 'has-dropdown';
-      elseif( 1 == $depth )
-        $element->classes[] = 'dropdown';
+
     }
 
     parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
@@ -58,7 +56,7 @@ class Basestation_Topbar_Nav_Walker extends Walker_Nav_Menu {
     }
 
     $indent  = str_repeat( "\t", $depth );
-    $class   = ( $depth < 2 ) ? 'dropdown' : 'unstyled';
+    $class   = ( $depth < 4 ) ? 'dropdown' : 'unstyled';
     $output .= "\n{$indent}<ul class='{$class}'>\n";
   }
 
@@ -71,7 +69,7 @@ class Basestation_Topbar_Nav_Walker extends Walker_Nav_Menu {
     parent::start_el( $item_html, $item, $depth, $args );
 
     if ( $item->is_dropdown && ( 0 == $depth ) ) {
-      $item_html = str_replace( '<a', '<a class="has-dropdown"', $item_html );
+      $item_html = str_replace( '<li', '<li class="has-dropdown"', $item_html );
       $item_html = str_replace( esc_attr( $item->url ), '#', $item_html );
     }
 
