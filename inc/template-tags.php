@@ -100,8 +100,8 @@ function basestation_content_nav( $nav_id ) {
 
   <?php if ( is_single() ) : // navigation links for single posts ?>
 
-    <?php previous_post_link( '<li class="nav-previous left">%link</li>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'basestation' ) . '</span> %title' ); ?>
-    <?php next_post_link( '<li class="nav-next right">%link</li>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'basestation' ) . '</span>' ); ?>
+    <?php previous_post_link( '<li class="nav-previous">%link</li>', '<span class="meta-nav right">' . _x( ' &raquo;', 'Previous post link', 'basestation' ) . '</span> %title' ); ?>
+    <?php next_post_link( '<li class="nav-next">%link</li>', '%title<span class="meta-nav left">' . _x( '&laquo; ', 'Next post link', 'basestation' ) . '</span>' ); ?>
 
   <?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 

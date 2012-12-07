@@ -87,6 +87,10 @@ body.logged-in > div #page {
   font-size: 18px;
 }
 
+.top-bar ul > li a:not(.button) {
+  font-weight: normal;
+}
+
 .top-bar input#s {
   margin: 5px 0;
 }
@@ -118,9 +122,15 @@ body.logged-in > div #page {
 .nav-previous {
   float: right;
 }
+.nav-previous a {
+  padding-right: 2px;
+}
 
 .nav-next {
   float: left;
+}
+.nav-next a {
+  padding-left: 2px;
 }
 /* Numbered page navigation*/
 #numbered-nav-below {

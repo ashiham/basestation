@@ -16,16 +16,6 @@
  */
 class Basestation_Topbar_Nav_Walker extends Walker_Nav_Menu {
 
-  public $dropdown_enqueued;
-
-  /**
-   * Check if required script queued.
-   */
-  function __construct() {
-
-    $this->dropdown_enqueued = wp_script_is( 'foundation.js', 'queue' );
-  }
-
   /**
    * Adjust classes for individual menu items.
    */
@@ -36,24 +26,18 @@ class Basestation_Topbar_Nav_Walker extends Walker_Nav_Menu {
 
     $element->is_dropdown = ! empty( $children_elements[$element->ID] );
 
+
     if ( $element->is_dropdown ) {
-
         $element->classes[] = 'has-dropdown';
-
     }
 
     parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
   }
 
   /**
-   * Enqueue script and set class for list.
+   * Set class for list.
    */
   function start_lvl( &$output, $depth ) {
-
-    if ( ! $this->dropdown_enqueued ) {
-      wp_enqueue_script( 'foundation.js' );
-      $this->dropdown_enqueued = true;
-    }
 
     $indent  = str_repeat( "\t", $depth );
     $class   = ( $depth < 4 ) ? 'dropdown' : 'unstyled';
