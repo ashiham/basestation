@@ -13,7 +13,7 @@ get_header(); ?>
     <section id="primary">
       <div class="row">
       <?php do_action( 'basestation_content_before' ); ?>
-      <div id="content" role="main" class="<?php echo apply_filters( 'basestation_content_container_class', 'nine columns' ); ?>">
+      <div id="content" class="<?php echo apply_filters( 'basestation_content_container_class', 'nine columns' ); ?>">
       <?php do_action( 'basestation_archive_page_title' ); ?>
       <?php
       basestation_archive_sticky_posts(); // sticky post query ?>

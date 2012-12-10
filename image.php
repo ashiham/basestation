@@ -9,7 +9,7 @@
 get_header(); ?>
 
     <div id="primary" class="image-attachment">
-      <div id="content" role="main">
+      <div id="content">
 
       <?php while ( have_posts() ) : the_post(); ?>
 

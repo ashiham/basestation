@@ -10,7 +10,7 @@
 get_header(); ?>
   <?php do_action( 'basestation_content_before' ); ?>
     <div id="primary">
-      <div id="content" role="main">
+      <div id="content">
 
         <?php while ( have_posts() ) : the_post(); ?>
 

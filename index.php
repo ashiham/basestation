@@ -10,7 +10,7 @@ get_header(); ?>
       <div id="main-row" class="row">
 
         <?php do_action( 'basestation_content_before' ); ?>
-        <div id="content" role="main" class="<?php echo apply_filters( 'basestation_content_container_class', 'nine columns' ); ?>">
+        <div id="content" class="<?php echo apply_filters( 'basestation_content_container_class', 'nine columns' ); ?>">
         <?php if ( have_posts() ) :
 
           if ( of_get_option('basestation_content_nav_above') ) { basestation_content_nav( 'nav-above' ); } // display content nav above posts?

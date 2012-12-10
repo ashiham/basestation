@@ -8,8 +8,15 @@
  * @since Base Station 0.1
  */
 ?>
+</section>
+    <section id="mainside" role="complementary">
+        <nav id="sideMenu" role="navigation">
+          <?php wp_nav_menu( array( 'theme_location' => 'main', 'container' => false, 'menu_class' => '', 'items_wrap' => '<ul class="nav-bar">%3$s</ul>', 'walker' => new Basestation_Navbar_Nav_Walker(), 'fallback_cb' => false ) ); ?>
+        </nav>
+    </section>
 
 	</div><!-- #main -->
+
   <?php do_action( 'basestation_main_after' ); ?>
   <div id="footer-container" class="container-fluid">
     <div id="footer-row" class="row footerwidget">

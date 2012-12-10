@@ -11,7 +11,7 @@
 <?php do_action( 'basestation_sidebar_before' ); ?>
   <div id="sidebar" class="<?php echo apply_filters( 'basestation_sidebar_container_class', 'three columns' ); ?>">
     <?php do_action( 'basestation_sidebar_inside_before' ); ?>
-    <div id="secondary" class="<?php echo apply_filters( 'basestation_secondary_container_class', 'widget-area well' ); ?>" role="complementary">
+    <div id="secondary" class="<?php echo apply_filters( 'basestation_secondary_container_class', 'widget-area' ); ?>">
       <?php do_action( 'before_sidebar' ); ?>
       <?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 

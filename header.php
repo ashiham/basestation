@@ -28,7 +28,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class( 'off-canvas hide-extras' ); ?>>
 <!--[if lt IE 8]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
 <?php if ( of_get_option('basestation_show_top_navbar',1) ) {
@@ -83,3 +83,4 @@ if ( !is_page_template( 'page-hero.php' ) ) { ?>
 
   <?php do_action( 'basestation_main_before' ); ?>
   <div id="main">
+  <section role="main">

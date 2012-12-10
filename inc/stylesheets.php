@@ -10,6 +10,8 @@
 /* Load Foundation CSS */
 function basestation_foundation_styles() {
     wp_enqueue_style( 'foundation', basestation_locate_template_uri( 'css/foundation.min.css' ), array(), '3.22', 'all' );
+    //wp_enqueue_style( 'app', basestation_locate_template_uri( 'css/app.css' ), array(), '3.22', 'all' );
+    wp_enqueue_style( 'offcanvas', basestation_locate_template_uri( 'css/offcanvas.css' ), array(), '3.22', 'all' );
 }
 add_action( 'wp_enqueue_scripts', 'basestation_foundation_styles', 1 );
 
@@ -17,6 +19,11 @@ add_action( 'wp_enqueue_scripts', 'basestation_foundation_styles', 1 );
 
 /* Load theme styles */
 function basestation_theme_styles() {
+  /* Load local fonts if theme supports */
+  if ( current_theme_supports( 'basestation-local-fonts' ) ) {
+      wp_enqueue_style( 'basestation-local-fonts', basestation_locate_template_uri( 'css/fonts.css' ) );
+  }
+
     wp_enqueue_style( 'basestation-style', get_stylesheet_uri() );
 
     /* Check for custom.css and if it exists and we're not using a child theme, load it. */
