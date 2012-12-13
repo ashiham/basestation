@@ -33,9 +33,7 @@
 
 <?php if ( of_get_option('basestation_show_top_navbar',1) ) {
   get_template_part( '/inc/parts/menu', 'top' );
-}
-/* If not using Hero template, do header image and menu stuff */
-if ( !is_page_template( 'page-hero.php' ) ) { ?>
+} ?>
 
   <!-- Site title and description in masthead -->
   <div id="page" class="container-fluid hfeed">
@@ -79,7 +77,6 @@ if ( !is_page_template( 'page-hero.php' ) ) { ?>
 
     <?php if ( function_exists('basestation_breadcrumbs') && !is_front_page() ) { basestation_breadcrumbs(); } ?>
 
-<?php } // !is_page_template( 'page-hero.php' ) ?>
 
   <?php do_action( 'basestation_main_before' ); ?>
   <div id="main">
