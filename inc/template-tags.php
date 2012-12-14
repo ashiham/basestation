@@ -187,7 +187,7 @@ if ( ! function_exists( 'basestation_do_post_author' ) ) :
  * @since 0.59
  */
 function basestation_do_post_author() {
-  printf( __( '<span class="byline"><i class="meta-icon foundicon-smiley"></i> <span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span></span>', 'basestation' ),
+  printf( __( '<span class="byline"><i class="meta-icon icon-user"></i> <span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span></span>', 'basestation' ),
     esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
     esc_attr( sprintf( __( 'View all posts by %s', 'basestation' ), get_the_author() ) ),
     esc_html( get_the_author() )
@@ -205,7 +205,7 @@ if ( ! function_exists( 'basestation_do_posted_on' ) ) :
  * @since 0.1
  */
 function basestation_do_posted_on() {
-  printf( __( '<span class="published-date"><i class="meta-icon foundicon-calendar" title="Published date"></i> <a href="%1$s" title="%2$s"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a></span>', 'basestation' ),
+  printf( __( '<span class="published-date"><i class="meta-icon icon-calendar" title="Published date"></i> <a href="%1$s" title="%2$s"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a></span>', 'basestation' ),
     esc_url( get_permalink() ),
     esc_attr( get_the_time() ),
     esc_attr( get_the_date( 'c' ) ),
@@ -268,7 +268,7 @@ if ( ! function_exists( 'basestation_do_post_tags' ) ):
 function basestation_do_post_tags() {
   $post_tags = get_the_tags();
   if ( $post_tags ) {
-    echo '<span class="tags-links"><i class="meta-icon foundicon-flag" title="Tags"></i>' . "\n";
+    echo '<span class="tags-links"><i class="meta-icon icon-tag" title="Tags"></i>' . "\n";
     $num_tags = count( $post_tags );
     $tag_count = 1;
     $nofollow = ' nofollow'; // tell search engines to not index tag url
@@ -298,7 +298,7 @@ if ( ! function_exists( 'basestation_do_post_categories' ) ):
 function basestation_do_post_categories() {
   $post_categories = get_the_category();
   if ( $post_categories ) {
-    echo "\t<span class=\"cat-links\"><i class=\"meta-icon foundicon-folder\" title=\"Categories\"></i>\n";
+    echo "\t<span class=\"cat-links\"><i class=\"meta-icon icon-folder\" title=\"Categories\"></i>\n";
     $num_categories = count( $post_categories );
     $category_count = 1;
     foreach ( $post_categories as $category ) {
@@ -327,7 +327,7 @@ if ( ! function_exists( 'basestation_do_post_comments_link' ) ):
  */
  function basestation_do_post_comments_link() {
   if ( comments_open() || ( '0' != get_comments_number() && ! comments_open() ) ) : ?>
-    <span class="comments-link"><i class="meta-icon foundicon-mic"></i><?php comments_popup_link( __( ' Leave a comment', 'basestation' ), __( ' 1 Comment', 'basestation' ), __( ' % Comments', 'basestation' ) ); ?></span>
+    <span class="comments-link"><i class="meta-icon icon-chat"></i><?php comments_popup_link( __( ' Leave a comment', 'basestation' ), __( ' 1 Comment', 'basestation' ), __( ' % Comments', 'basestation' ) ); ?></span>
   <?php endif;
  }
  add_action( 'basestation_post_comments_link', 'basestation_do_post_comments_link' );

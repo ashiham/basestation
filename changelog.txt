@@ -1,8 +1,15 @@
 == Change log ==
-Version 0.9.1 - Under development
-------------------------------
+Version 0.9.2 - Under development
+---------------------------------
+- Replaced Foundation icon fonts with Entypo fonts.
+
+
+
+Version 0.9.1 - December 12, 2012
+---------------------------------
 - Dropdowns now work greater than one level deep in Top menu.
 - Main menu now supports off canvas on mobile.
+
 
 
 Version 0.9 - December 3, 2012

@@ -10,7 +10,6 @@
 /* Load Foundation CSS */
 function basestation_foundation_styles() {
     wp_enqueue_style( 'foundation', basestation_locate_template_uri( 'css/foundation.min.css' ), array(), '3.22', 'all' );
-    //wp_enqueue_style( 'app', basestation_locate_template_uri( 'css/app.css' ), array(), '3.22', 'all' );
     wp_enqueue_style( 'offcanvas', basestation_locate_template_uri( 'css/offcanvas.css' ), array(), '3.22', 'all' );
 }
 add_action( 'wp_enqueue_scripts', 'basestation_foundation_styles', 1 );
