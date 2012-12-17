@@ -244,7 +244,8 @@ dl.nav.mobile dd.current-menu-item a,
 }
 
 #comments cite {
-  font-size: 15px;
+  font-size: 18px;
+  font-style: normal;
   font-weight: bold;
 }
 
@@ -309,6 +310,10 @@ div.comment-author {
 
 div.comment-content {
   margin-top: 7px;
+}
+
+.comment-content p {
+  font-size: 16px;
 }
 
 div.comment-author > img.avatar {
@@ -534,6 +539,10 @@ h3, h4, h5, h6 {
 .comment-content img,
 .widget img {
   max-width: 100%;
+}
+
+.entry-title {
+  font-size: 32px;
 }
 
 /* Titles in archive/index */
@@ -920,7 +929,7 @@ img.aligncenter {
 }
 
 .widget-title {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .widget li {

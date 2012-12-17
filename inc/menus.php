@@ -53,7 +53,7 @@ class Basestation_Topbar_Nav_Walker extends Walker_Nav_Menu {
     parent::start_el( $item_html, $item, $depth, $args );
 
     if ( $item->is_dropdown && ( 0 == $depth ) ) {
-      $item_html = str_replace( '<li', '<li class="has-dropdown"', $item_html );
+      //$item_html = str_replace( '<li', '<li class="has-dropdown"', $item_html );
       $item_html = str_replace( esc_attr( $item->url ), '#', $item_html );
     }
 
