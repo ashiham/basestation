@@ -987,6 +987,10 @@ input#s {
   float: left;
   margin-right: 5px
 }
+
+#loginform .button {
+  font-weight: normal;
+}
 /* End of Widgets
 ---------------------------------------------- */
 
