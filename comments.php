@@ -95,7 +95,7 @@
 
     <label for="email" class="control-group"><?php _e('Email (will not be published)', 'basestation'); if ($req) _e(' (required)', 'basestation'); ?></label>
     <div class="input-prepend">
-    <span class="add-on"><i class="icon-envelope"></i> </span><input type="email" class="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?>>
+    <span class="add-on"><i class="icon-mail"></i> </span><input type="email" class="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?>>
     </div><!-- /input-prepend -->
 
     <label for="url" class="control-label"><?php _e('Website', 'basestation'); ?></label>

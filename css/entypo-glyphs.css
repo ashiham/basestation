@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: 'entypo-glyphs';
   src: url("../inc/fonts/entypo-glyphs/entypo-glyphs.eot");
@@ -28,12 +30,13 @@
 /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-pencil:before { content: '\e844'; } /* '' */
-.icon-feather:before { content: '\2712'; } /* '✒' */
-.icon-tag:before { content: '\e9b8'; } /* '' */
-.icon-comment:before { content: '\e847'; } /* '' */
-.icon-chat:before { content: '\e848'; } /* '' */
-.icon-user:before { content: '\e99f'; } /* '' */
-.icon-folder:before { content: '\e84e'; } /* '' */
-.icon-calendar:before { content: '\e852'; } /* '' */
-.icon-clock:before { content: '\e857'; } /* '' */
+.icon-home:before { content: '\2302'; } /* '⌂' */
+.icon-mail:before { content: '\2709'; } /* '✉' */
+.icon-pencil:before { content: '\270e'; } /* '✎' */
+.icon-tag:before { content: '\e70c'; } /* '' */
+.icon-comment:before { content: '\e718'; } /* '' */
+.icon-user:before { content: '👤'; } /* '\1f464' */
+.icon-folder:before { content: '📁'; } /* '\1f4c1' */
+.icon-calendar:before { content: '📅'; } /* '\1f4c5' */
+.icon-link:before { content: '🔗'; } /* '\1f517' */
+.icon-clock:before { content: '🕔'; } /* '\1f554' */
