@@ -97,7 +97,7 @@ function basestation_content_nav( $nav_id ) {
 
   <nav id="<?php echo $nav_id; ?>" class="<?php echo $nav_class; ?>">
     <h3 class="assistive-text"><?php _e( 'Post navigation', 'basestation' ); ?></h3>
-
+    <ul>
   <?php if ( is_single() ) : // navigation links for single posts ?>
 
     <?php previous_post_link( '<li class="nav-previous">%link</li>', '<span class="meta-nav right">' . _x( ' &raquo;', 'Previous post link', 'basestation' ) . '</span> %title' ); ?>
@@ -114,7 +114,7 @@ function basestation_content_nav( $nav_id ) {
     <?php endif; ?>
 
   <?php endif; ?>
-
+  </ul>
   </nav><!-- #<?php echo $nav_id; ?> -->
   <?php
 }
