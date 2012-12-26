@@ -4,7 +4,7 @@
  */
 ?>
   <li>
-    <div id="innergrid" style="float: none">
+    <div class="innergrid">
     <header>
       <h2 class="grid-header"><a class="entry-title" title="<?php printf( esc_attr__( 'Link to %s', 'basestation' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
     </header>
@@ -14,10 +14,10 @@
       <?php } else {
         the_excerpt();
       } ?>
-    </div><!-- #innergrid -->
-    <div id="grid-footer">
-      <p id="grid-footer-meta"><?php if (of_get_option('basestation_published_date',1) ) { do_action( 'basestation_posted_on' ); } ?>
+    </div><!-- .innergrid -->
+    <div class="grid-footer">
+      <p class="grid-footer-meta"><?php if (of_get_option('basestation_published_date',1) ) { do_action( 'basestation_posted_on' ); } ?>
       <?php edit_post_link( __( '<span class="edit-link pull-right"><i class="icon-pencil"></i>', 'basestation' ), '', '</span>' ); ?>
       </p>
-    </div><!-- #grid-footer -->
+    </div><!-- .grid-footer -->
   </li>
