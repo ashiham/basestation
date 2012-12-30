@@ -155,7 +155,7 @@ function basestation_comment( $comment, $args, $depth ) {
         <?php endif; ?>
 
         <div class="comment-meta commentmetadata">
-          <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
+          <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time datetime="<?php comment_time( 'c' ); ?>">
           <?php
             /* translators: 1: date, 2: time */
             printf( __( '%1$s at %2$s', 'basestation' ), get_comment_date(), get_comment_time() ); ?>
@@ -205,7 +205,7 @@ if ( ! function_exists( 'basestation_do_posted_on' ) ) :
  * @since 0.1
  */
 function basestation_do_posted_on() {
-  printf( __( '<span class="published-date"><i class="meta-icon icon-calendar" title="Published date"></i> <a href="%1$s" title="%2$s"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a></span>', 'basestation' ),
+  printf( __( '<span class="published-date"><i class="meta-icon icon-calendar" title="Published date"></i> <a href="%1$s" title="%2$s"><time class="entry-date" datetime="%3$s">%4$s</time></a></span>', 'basestation' ),
     esc_url( get_permalink() ),
     esc_attr( get_the_time() ),
     esc_attr( get_the_date( 'c' ) ),
