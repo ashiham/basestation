@@ -82,7 +82,7 @@ class basestation_Widget_Login extends WP_Widget {
 
 			/* Show avatar if enabled. */
 			if ( !empty( $show_avatar ) )
-				echo get_avatar( $user_ID );
+				echo get_avatar( $user_ID, 85 );
 
 			/* Show logged in text if any is written. */
 			if ( !empty( $logged_in_text ) ):
@@ -104,7 +104,7 @@ class basestation_Widget_Login extends WP_Widget {
 
 			/* Show avatar if enabled. */
 			if ( $show_avatar )
-				echo get_avatar( $user_ID );
+				echo get_avatar( $user_ID, 85 );
 
 			/* Show logged out text if any is written. */
 			if ( $logged_out_text ) ?>

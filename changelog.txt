@@ -1,7 +1,13 @@
 == Change log ==
-Version 0.9.2 - Under development
+Version 0.9.2 - February 1, 2013
 ---------------------------------
 - Replaced Foundation icon fonts with Entypo fonts.
+- Fixed bug with double classing on dropdown menu items.
+- Minor styling updates.
+- Added missing <ul> element in content nav links.
+- Resolved duplicate IDs in the featured posts grid.
+- Removed pubdate from time elements in template-tags.php.
+- Minor code cleanup
 
 
 
